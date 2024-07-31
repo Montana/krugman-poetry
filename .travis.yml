@@ -10,3 +10,4 @@ before_install:
 script:
   - chmod +x ./retry.sh 
   - ./retry.sh curl -I https://example.com
+  - python3 krugman_poem.py 
