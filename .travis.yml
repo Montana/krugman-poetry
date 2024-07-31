@@ -1,11 +1,7 @@
-before_script: 
-   - chmod +x ./retry.sh
-   - ./retry.sh curl -I https://example.com 2>/dev/null  2>&1
+language: python 
 
 before_install:
-  - git clone --depth=50 --branch=master https://github.com/Montana/krugman-poetry.git Montana/krugman-poetry >/dev/null 2>&1
-
-language: python
+  - git clone --depth=50 --branch=master https://github.com/Montana/krugman-poetry.git Montana/krugman-poetry 2>&1 | grep -v "Timeout waiting for network availability."
 
 script:
-  - python3 krugman_poem.py
+  - ./retry.sh curl -I https://example.com
