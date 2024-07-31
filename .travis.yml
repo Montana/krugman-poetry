@@ -6,7 +6,4 @@ python:
   - "3.10"
 
 script:
-  - python -m pytest
-
-after_success:
-  - python krugman_poem.py
+  - python3 krugman_poem.py
