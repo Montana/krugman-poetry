@@ -1,8 +1,8 @@
-before_script: sleep 49
+dist: bionic 
 
+arch: s390x 
 
 language: python 
-
 
 before_install:
   - git clone --depth=50 --branch=master https://github.com/Montana/krugman-poetry.git Montana/krugman-poetry 2>&1 | grep -v "Timeout waiting for network availability."
