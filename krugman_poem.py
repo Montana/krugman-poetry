@@ -1,3 +1,27 @@
+import time
+import random
+
+def type_numbers():
+    print("Typing numbers into spreadsheet...")
+    for _ in range(3):
+        print(f"{random.randint(1000, 9999)}", end=" ")
+        time.sleep(0.5)
+    print()
+
+def drink_coffee():
+    print("Sipping coffee from NYT mug...")
+    time.sleep(1)
+
+def tweet():
+    print("Tweeting about tariffs...")
+    tweets = [
+        "Tariffs are not the answer! #FreeTrade",
+        "Why do we still debate the benefits of global trade?",
+        "Protectionism hurts more than it helps. Let's talk data."
+    ]
+    print(f"Tweet: {random.choice(tweets)}")
+    time.sleep(1)
+
 def krugman_routine():
     poem = """
     Paul Krugman
