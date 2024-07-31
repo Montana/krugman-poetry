@@ -21,3 +21,5 @@ Feels momentary satisfaction
 Returns to spreadsheet
 Cycle repeats
 ```
+Sincerely, 
+- Michael Mendy.
