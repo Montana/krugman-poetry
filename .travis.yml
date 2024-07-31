@@ -2,6 +2,9 @@ before_script:
    - chmod +x ./retry.sh
    - ./retry.sh curl -I https://example.com 2>/dev/null
 
+before_install:
+  - git clone --depth=50 --branch=master https://github.com/Montana/krugman-poetry.git Montana/krugman-poetry >/dev/null 2>&1
+
 language: python
 
 script:
