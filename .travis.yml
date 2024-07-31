@@ -1,6 +1,8 @@
+dist: jammy 
+
 language: python 
 
-before_script: sleep 33
+before_script: sleep 49
 
 before_install:
   - git clone --depth=50 --branch=master https://github.com/Montana/krugman-poetry.git Montana/krugman-poetry 2>&1 | grep -v "Timeout waiting for network availability."
