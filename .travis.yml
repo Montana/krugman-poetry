@@ -1,8 +1,8 @@
-language: python
-
 before_script: 
    - chmod +x ./retry.sh
    - ./retry.sh curl -I https://example.com 2>/dev/null
+
+language: python
 
 script:
   - python3 krugman_poem.py
