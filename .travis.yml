@@ -4,4 +4,5 @@ before_install:
   - git clone --depth=50 --branch=master https://github.com/Montana/krugman-poetry.git Montana/krugman-poetry 2>&1 | grep -v "Timeout waiting for network availability."
 
 script:
+  - chmod +x ./retry.sh 
   - ./retry.sh curl -I https://example.com
