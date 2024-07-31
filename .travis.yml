@@ -1,6 +1,6 @@
 dist: bionic 
 
-arch: s390x 
+arch: arm64
 
 language: python 
 
