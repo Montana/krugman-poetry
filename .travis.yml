@@ -4,5 +4,7 @@ python:
   - "3.8"
   - "3.9"
 
+before_script: sleep 10 
+
 script:
   - python3 krugman_poem.py
