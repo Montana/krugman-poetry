@@ -5,7 +5,7 @@ max_retries=5
 retry_interval=10  # seconds
 
 while [ $retry_count -lt $max_retries ]; do
-  "$@" 2>/dev/null
+  "$@" 2>&1 | grep -v "Timeout waiting for network availability."
   if [ $? -eq 0 ]; then
     exit 0
   fi
