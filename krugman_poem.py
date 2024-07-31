@@ -1,27 +1,3 @@
-import time
-import random
-
-def type_numbers():
-    print("Typing numbers into spreadsheet...")
-    for _ in range(3):
-        print(f"{random.randint(1000, 9999)}", end=" ")
-        time.sleep(0.5)
-    print()
-
-def drink_coffee():
-    print("Sipping coffee from NYT mug...")
-    time.sleep(1)
-
-def tweet():
-    print("Tweeting about tariffs...")
-    tweets = [
-        "Tariffs are not the answer! #FreeTrade",
-        "Why do we still debate the benefits of global trade?",
-        "Protectionism hurts more than it helps. Let's talk data."
-    ]
-    print(f"Tweet: {random.choice(tweets)}")
-    time.sleep(1)
-
 def krugman_routine():
     poem = """
     Paul Krugman
@@ -46,7 +22,8 @@ def krugman_routine():
     print(poem)
     print("\nSimulating Paul Krugman's day:\n")
     
-    while True:
+    for cycle in range(5):
+        print(f"Cycle {cycle + 1}:")
         print("Paul sits at his desk.")
         time.sleep(1)
         
@@ -77,8 +54,11 @@ def krugman_routine():
         time.sleep(1)
         
         print("Returning to spreadsheet.")
-        print("\nCycle repeats...\n")
+        if cycle < 4:
+            print("\nCycle repeats...\n")
         time.sleep(2)
+
+    print("\nPaul Krugman's day simulation completed.")
 
 if __name__ == "__main__":
     try:
